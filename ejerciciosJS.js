@@ -148,9 +148,12 @@ console.log("\n");
 // Escribir una funcion que retorne 0 si el input es 1 y 1 si el input es 0
 // No se pueden utilizar condicionales, ternarios, negaciones ni operatores bit
 console.log("Ejercicio 7");
+//método utilizado ecuacion de la recta jaja xD
 const change = n =>{
-    
+    return Math.abs(-1*(n-1));
 }
+console.log(change(0)); //1
+console.log(change(1)); //0
 console.log("\n");
 
 // Messenger bzzz

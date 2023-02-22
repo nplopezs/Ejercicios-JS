@@ -70,7 +70,7 @@ countTrue([]) ➞ 0
 // Regresar 0 si el array es vacio
 // usar recurcion
 console.log("Ejercicio 2");
-
+//no lo logre
 const numTrues = array => {
     if (array.isEmpty){
         return 0;
@@ -163,5 +163,19 @@ console.log("\n");
 // Si hay 2 personas -> "user1 y user2 estan en linea"
 // Si hay n>2 personas, "user1 y n-1 mas estan en linea"
 console.log("Ejercicio 8");
+const messengerBuzz = n => {
+    if (n == 0)
+        return "No hay nadie en línea";
+    if (n == 1)
+        return `user${n} esta en linea`;
+    if (n == 2)
+        return `user${n-1} y user${n} estan en línea`
+    if (n>2)
+        return `user1 y ${n-1} estan en línea`
+}
 
-console.log("\n");
+console.log(messengerBuzz(0));
+console.log(messengerBuzz(1));
+console.log(messengerBuzz(2));
+console.log(messengerBuzz(3));
+console.log(messengerBuzz(4));

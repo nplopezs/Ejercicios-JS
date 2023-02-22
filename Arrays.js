@@ -2,11 +2,30 @@
 // Crear una funcion que tome 2 parametros, (numero, longitud) y regrse un array de longitud cantidad de numeros multiplos del numero por parametro
 // arrayMultiplos(2, 10) -> [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 // arrayMultiplos(17, 6) -> [17, 34, 51, 68, 85, 102]
-
+console.log("Ejercicio 1");
+const arrayMultiplos = (numero,longitud) => {
+    let array = [];
+    for (let i = 1; i <= longitud; i++) {
+        array.push(i*numero);
+    }
+    return array;
+}
+console.log(arrayMultiplos(2,10));
+console.log(arrayMultiplos(17,6));
+console.log("\n");
 
 // Escrbir una funcion que descubra si el array es dominante positivo
 // Un array es positivo dominante cuando la mayoria de sus elementos son positivos -> [1, -2, 55, 10]
 // positiveDom([-1, -3, -5, 4, 6767]) -> false
+console.log("Ejercicio 2");
+const dominante = array => {
+    for(let i = 0; i < array.length; i++){
+        return array;
+    }
+}
+
+console.log(dominante([1, -2, 55, 10]))
+console.log("\n");
 
 
 // Promedio antipode

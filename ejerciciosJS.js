@@ -70,6 +70,16 @@ countTrue([]) ➞ 0
 // Regresar 0 si el array es vacio
 // usar recurcion
 console.log("Ejercicio 2");
+
+const numTrues = array => {
+    if (array.isEmpty){
+        return 0;
+    } else{
+        return 1;
+    }
+}
+
+console.log(numTrues([]))
 console.log("\n");
 
 
@@ -106,20 +116,42 @@ function fibonacci(n) {
     return fib.slice(0, n); // Devolvemos los primeros n números de la serie
 }
 
-  console.log(fibonacci(10)); 
-  
+console.log(fibonacci(10)); 
+console.log("\n");
 
 // Encontrar el numero n de una figura piramidal triangular (tetrahedron)
 // (nivel) -> cantidad de numeritos
+console.log("Ejercicio 5");
+const cantNum = nivel =>{
+    return (nivel * (nivel + 1)) / 2;
+}
+console.log(cantNum(4));
+console.log("\n");
 
 // Crear una funcion que tome el nombre de un pais y su area
 // (nombre, a)
 // Debe regresar la proporcion del area del pais en acorde a el area de tierra en el planeta
 //('Russia', 17098242) -> Russia is 11.48%
 // ("USA", 9372610) -> "USA is 6.29%
+console.log("Ejercicio 6");
+const areaProporcional = (pais,area) => {
+    // La cantidad esta evaluada por el porcentaje equilante al 29.1% que es la cantidad de tierra en el planeta lo demás es agua
+    const areaTierra = 148439100; 
+     let areaPorcentaje = (area * 100)/areaTierra;
+    console.log(`${pais} is ${areaPorcentaje.toFixed(2)}%`);
+}
+
+areaProporcional("Russia",17098242);
+areaProporcional("USA", 9372610);
+console.log("\n");
 
 // Escribir una funcion que retorne 0 si el input es 1 y 1 si el input es 0
 // No se pueden utilizar condicionales, ternarios, negaciones ni operatores bit
+console.log("Ejercicio 7");
+const change = n =>{
+    
+}
+console.log("\n");
 
 // Messenger bzzz
 // (0 ) n
@@ -127,3 +159,6 @@ function fibonacci(n) {
 // Si hay 1 persona -> "user1 esta en linea"
 // Si hay 2 personas -> "user1 y user2 estan en linea"
 // Si hay n>2 personas, "user1 y n-1 mas estan en linea"
+console.log("Ejercicio 8");
+
+console.log("\n");

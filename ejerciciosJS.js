@@ -72,14 +72,13 @@ countTrue([]) ➞ 0
 console.log("Ejercicio 2");
 //no lo logre
 const numTrues = array => {
-    if (array.isEmpty){
+    if (array.length === 0) 
         return 0;
-    } else{
+    else
         return 1;
-    }
 }
 
-console.log(numTrues([]))
+console.log(numTrues([2]))
 console.log("\n");
 
 

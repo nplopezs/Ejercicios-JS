@@ -81,6 +81,22 @@ const numTrues = array => {
 console.log(numTrues([2]))
 console.log("\n");
 
+/* 
+const countTrue = (arr) => {
+    if (arr.length == 0) {
+        return 0
+    }
+    let newArray = arr.slice(1, arr.length);
+    let count = countTrue(newArray);
+
+    if (arr[0] == true) {
+        return count + 1;
+
+    } else {
+        return count;
+    }
+}
+ */
 
 
 // Escribir una funcion para encontrar el mayor comun divisor de 2 numeros positivos enteros

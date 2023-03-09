@@ -34,4 +34,28 @@ console.log("\n");
 // [1,2,3] [5,22,6] -> 1 + 6, 2 + 22, 3 + 5 -> [7, 24, 8]
 // - Dividir cada numero del array final entre 2  -> [3.5, 12, 4]
 console.log("Ejercicio 3");
+const antipode = array => {
+    let isPar = array.length % 2 == 0;
+    if (isPar){
+        var arrMitad1 = array.slice(0,array.length/2);
+        var arrMitad2 = array.slice(array.length/2);
+    }
+    else{
+        array.splice(Math.floor(array.length/2),1)
+        var arrMitad1 = array.slice(0,array.length/2);
+        var arrMitad2 = array.slice(array.length/2);
+    }
+    
+    console.log(arrMitad1, arrMitad2);
+0
+    let sumArray = [];
+    for(let i = 0; i < arrMitad1.length; i++){
+        sumArray.push(arrMitad1[i]+arrMitad2[i]);
+    }
+    console.log(sumArray)
+
+    return sumArray.map(num => num/2);
+} 
+
+console.log(antipode([1,2,3,5,22,6,7]))
 console.log("\n");

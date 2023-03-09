@@ -19,12 +19,11 @@ console.log("\n");
 // positiveDom([-1, -3, -5, 4, 6767]) -> false
 console.log("Ejercicio 2");
 const dominante = array => {
-    for(let i = 0; i < array.length; i++){
-        return array;
-    }
+    let pos = array.filter(num => num > 0);    
+    return (pos.length > (Math.floor(array.length/2)))
 }
 
-console.log(dominante([1, -2, 55, 10]))
+console.log(dominante([-1, -2, 55, 10,-4,5,7]))
 console.log("\n");
 
 
@@ -34,3 +33,5 @@ console.log("\n");
 // - Sumar cada numero de la primera parte con los numeros inversos de la segunda parte
 // [1,2,3] [5,22,6] -> 1 + 6, 2 + 22, 3 + 5 -> [7, 24, 8]
 // - Dividir cada numero del array final entre 2  -> [3.5, 12, 4]
+console.log("Ejercicio 3");
+console.log("\n");
